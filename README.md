@@ -1,13 +1,13 @@
-# 🚗 RoadRescue - On Road Breakdown Help System
+# 🚗 Rapid_Road_Help - On Road Breakdown Help System
 
-RoadRescue is a **web-based platform** that provides **instant on-road vehicle breakdown assistance**.  
+Rapid_Road_Help is a **web-based platform** that provides **instant on-road vehicle breakdown assistance**.  
 Users can request emergency help such as **towing, fuel delivery, flat tire repair, and roadside mechanic support** directly from the website.  
 
 ---
 
 ## 🌍 Live Demo
-- 🔹 **Frontend (React App):** [RoadRescue Frontend](https://roadbuddy-help.netlify.app/)  
-- 🔹 **Backend (Node.js API):** [RoadRescue Backend](https://rapidroadhelp-backend.onrender.com)  
+- 🔹 **Frontend (React App):** [Rapid_Road_Help Frontend](https://roadbuddy-help.netlify.app/)  
+- 🔹 **Backend (Node.js API):** [Rapid_Road_Help Backend](https://rapidroadhelp-backend.onrender.com)  
 
 ---
 
