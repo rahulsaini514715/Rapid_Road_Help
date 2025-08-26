@@ -1,0 +1,52 @@
+.About_Us {
+  position: absolute;
+  /* width: 80%; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* adjust karta hai center */
+  border: 1px solid #282928;
+  padding: 50px;
+  background-color: #1516159d;
+  color: rgb(255, 255, 255);
+  border-radius: 13px;
+  box-shadow: 1px 1px 30px rgba(218, 10, 10, 0.192);
+}
+
+.About_Us>p{
+    font-weight: bold;
+}
+
+.Book_Now_Button{
+    background-color: rgba(228, 9, 9, 0.503);
+    color: white;
+    padding: 2px;
+    border-radius: 10px;
+    border: 1px solid  rgba(113, 5, 5, 0.932) ;
+    box-shadow: 1px 1px 10px rgb(146, 137, 137);
+    margin-left: 3%;
+}
+.Book_Now_Button:hover{
+   background-color: rgb(213, 11, 11);
+}
+
+
+.About_Us>p{
+    margin-top: 30px;
+}
+
+.Services{
+    margin-left: 12%;
+    background-color: #1516151b;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 1px 1px 10px rgba(255, 0, 0, 0.181);
+}
+
+
+
+@media screen and (max-width: 1115px) {
+ .About_Us {  
+  width: 80%;
+}
+
+}

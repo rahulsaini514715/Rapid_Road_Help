@@ -1,0 +1,216 @@
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* adjust karta hai center */
+  border: 1px solid #282928;
+  padding: 50px;
+  background-color: #1516159d;
+  color: rgb(255, 255, 255);
+  border-radius: 13px;
+  box-shadow: 1px 1px 30px rgba(218, 10, 10, 0.192);
+}
+/* dashboard profile  start*/
+.profile {
+  background-color: rgba(17, 17, 17, 0.579);
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.profile-info img {
+  height: 60px;
+  width: 60px;
+  border-radius: 12%;
+  object-fit: cover;
+}
+
+.username {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* dashboard profile  end*/
+.card {
+  border-radius: 12px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  margin-bottom: 40px;
+  background-color: red;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.dasboard-icon {
+  font-size: 40px;
+  color: #007bff;
+}
+
+.btn-bgr{
+  background-color: aqua;
+}
+
+.dashboard-Card{
+  background-color: #60442c3d;
+  border-radius: 10px;
+  border: 1px solid rgba(163, 70, 36, 0.866);
+  box-shadow:1px 1px 10px #ff62003d;
+}
+
+.dashboard-Card:hover{
+  background-color: #60442c61;
+  border-radius: 10px;
+  border: 1px solid rgba(163, 70, 36, 0.922);
+  box-shadow:1px 1px 10px #ff6200b8;
+}
+
+.dashboard-btn{
+  background-color: rgba(218, 120, 22, 0.407);
+  padding: 5px;
+  border-radius: 5px;
+  width: 200px;
+  text-decoration: none;
+  color: white;
+}
+
+.dashboard-btn:hover{
+  background-color: rgba(234, 10, 10, 0.407);
+  padding: 5px;
+  border-radius: 5px;
+  width: 200px;
+  text-decoration: none;
+  color: white;
+}
+
+/* Popup Overlay */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+/* Popup Box */
+.modalBox {
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 10px;
+  width: 400px;
+  max-width: 90%;
+  position: relative;
+  text-align: center;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.modalBox h2 {
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+
+.modalBox .content {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* Close Button */
+.modalBox .close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 25px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #333;
+}
+
+.modalBox .close:hover {
+  color: #007bff;
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+
+.notification-list {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.notification-list li {
+  padding: 8px 10px;
+  border-bottom: 1px solid #ddd;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.notification-list li:last-child {
+  border-bottom: none;
+}
+
+
+
+.loader-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(14, 15, 14, 0.967);
+  z-index: 9999;
+}
+
+
+
+
+@media screen and (min-width: 400px) and (max-width: 1300px) {
+  .row.g-4 > .col-md-6 {
+    flex: 0 0 100%; 
+    max-width: 100%;
+  }
+
+  .dashboard-Card{
+margin-bottom: 30px;
+font-size: larger;
+}
+.dasboard-icon {
+ display: none;
+}
+
+
+
+}

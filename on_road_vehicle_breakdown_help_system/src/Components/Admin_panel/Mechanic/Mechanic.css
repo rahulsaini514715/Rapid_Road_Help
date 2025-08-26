@@ -1,0 +1,93 @@
+.mechanic-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #282928;
+  padding: 30px;
+  background-color: rgba(21, 22, 21, 0.9);
+  color: #fff;
+  border-radius: 13px;
+  box-shadow: 1px 1px 30px rgba(197, 116, 116, 0.3);
+  max-width: 90%;
+  overflow-x: auto; /* agar table wide ho to scroll aayega */
+  width: 75%;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.no-bookings {
+  font-size: 16px;
+  color: #888;
+}
+
+
+.booking-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.garage-input {
+  padding: 8px 12px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.assign-btn {
+  padding: 8px 14px;
+  background: #007bff;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.assign-btn:hover {
+  background: #0056b3;
+}
+
+
+
+.loader-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(14, 15, 14, 0.967);
+  z-index: 9999;
+}
+
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;   /* ✅ Horizontal scroll enable */
+}
+
+.booking-table {
+  min-width: 1200px;   /* ✅ Table ko force karo ki scroll ho sake */
+  border-collapse: collapse;
+  width: 100%;
+}
+
+
+@media screen  and (min-width: 1600px) {
+
+  
+ 
+}

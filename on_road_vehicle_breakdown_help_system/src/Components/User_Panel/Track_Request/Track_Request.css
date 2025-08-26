@@ -1,0 +1,137 @@
+/* Container */
+.track-request-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #282928;
+  padding: 30px;
+  background-color: rgba(21, 22, 21, 0.9);
+  color: #fff;
+  border-radius: 13px;
+  box-shadow: 1px 1px 30px rgba(197, 116, 116, 0.3);
+  max-width: 90%;
+  overflow-x: auto; /* agar table wide ho to scroll aayega */
+}
+
+/* Card title */
+.card-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Table styling */
+.requests-table {
+  width: 100%;
+  border-collapse: collapse; /* must for borders to show correctly */
+  border: 2px solid #fff; /* outer table border */
+  min-width: 600px; /* scroll trigger for small screens */
+}
+
+.requests-table th,
+.requests-table td {
+  border: 2px solid #fff; /* inner cell borders */
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.requests-table th {
+  background-color: rgba(107, 36, 93, 0.373);
+  box-shadow: 1px 1px 50px rgb(41, 40, 40);
+}
+
+/* Optional: alternating row colors */
+.requests-table tbody tr:nth-child(odd) {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.requests-table tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Status styling */
+.status {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.status.pending {
+  color: #ffc107;
+}
+.status.complete {
+  color: #28a745;
+}
+.status.rejected {
+  color: #fa051d;
+}
+
+.status.active {
+  color: #69b4e6;
+}
+
+
+
+.pagination {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.page-btn {
+  background: #a35b81;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.page-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.page-info {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+
+
+/* Responsive: scroll below 1000px */
+@media (max-width: 1500px) {
+  .track-request-container {
+    max-width: 95%;
+    overflow-x: auto;
+  }
+
+  .requests-table {
+    min-width: 800px;
+    font-size: 14px;
+  }
+
+  .requests-table th,
+  .requests-table td {
+    padding: 8px;
+  }
+}
+
+
+
+/* ✅ Responsive */
+@media (max-width: 1500px) {
+  .requests-table-wrapper {
+    overflow-x: auto;
+  }
+  .requests-table {
+    min-width: 900px; /* 👈 keep this bigger than screen */
+    font-size: 14px;
+  }
+}
+

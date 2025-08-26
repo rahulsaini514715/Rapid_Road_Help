@@ -1,0 +1,138 @@
+.contact-page{
+  /* width: 90%; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  background-color: #0909097e;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow:1px 1px 20px #cccccc36;
+}
+.contact-banner {
+  width: 100%;
+  height: 40px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);  */
+}
+
+.contact-banner h1 {
+  color: white;
+  font-size: 36px;
+  font-family: 'Arial', sans-serif;
+}
+
+.contact-main {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  /* position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);  */
+}
+
+.contact-map {
+  flex: 1 1 100%;
+  margin-bottom: 1px;
+}
+
+.contact-info, .contact-form {
+  flex: 1 1 45%;
+  background-color: #5d57576c;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow:1px 1px 10px rgba(255, 0, 0, 0.277);
+  color: white;
+}
+
+.contact-info h2, .contact-form h2 {
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.contact-form form input,
+.contact-form form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.contact-form form textarea {
+  height: 120px;
+  resize: none;
+}
+
+.contact-form form button {
+  padding: 12px 20px;
+  background: linear-gradient(to right, #0066ff, #00ccff);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.contact-form form button:hover {
+  background: linear-gradient(to right, #0044cc, #0099cc);
+}
+
+
+/* Container for social icons */
+.social-links {
+  margin-top: 15px;
+  display: flex;
+  gap: 20px; /* space between icons */
+  justify-content: flex-start; /* or center if you want them centered */
+  align-items: center;
+}
+
+/* Individual icon link */
+.social-links a {
+  color: #ef9e9e; /* icon color */
+  transition: color 0.3s ease, transform 0.2s ease;
+  text-decoration: none;
+}
+
+/* Hover effect */
+.social-links a:hover {
+  color: #ff3366; /* change color on hover */
+  transform: scale(1.2); /* slightly enlarge on hover */
+}
+
+.Email{
+  color: white;
+}
+.Email:hover{
+  color: rgb(227, 21, 21);
+}
+
+/* Optional: make icons responsive */
+.social-links a svg {
+  vertical-align: middle;
+}
+
+
+@media screen and (max-width: 1115px) {
+.contact-page{
+  width: 90%;
+}
+}

@@ -1,0 +1,151 @@
+/* Container */
+.signup-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Asap', sans-serif;
+  /* position: relative; */
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* adjust karta hai center */
+  border: 1px solid #282928;
+
+}
+
+/* Login form */
+.signup {
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.215);
+  padding: 40px 30px 30px 30px;
+  border-radius: 10px;
+  width: 400px;
+  position: relative;
+  box-shadow: 1px 1px 10px rgba(219, 9, 9, 0.315); /* greenSeaweed */
+  transition: transform 300ms, box-shadow 300ms;
+}
+
+/* Rotating wave backgrounds */
+.signup::before,
+.signup::after {
+  content: '';
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 35%;
+  border-bottom-left-radius: 35%;
+  border-bottom-right-radius: 80%;
+  z-index: 9999;
+}
+
+.signup::before {
+  left: 15%;
+  bottom: -140%;
+  background-color: rgba(27, 230, 159, 0.201); /* blueQueen */
+  animation: waves 6s infinite linear;
+}
+
+.signup::after {
+  left: 15%;
+  bottom: -135%;
+  background-color: rgba(44, 37, 5, 0.182); /* greenSeaweed */
+  animation: waves 7s infinite linear;
+}
+
+/* Input fields */
+.signup input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 15px 0;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid rgba(170, 162, 162, 0.241);
+  background-color: rgba(237, 236, 236, 0.874);
+}
+
+/* Buttons */
+.signup button {
+  cursor: pointer;
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  width: 100%;
+  border: 0;
+  padding: 10px 0;
+  margin-top: 10px;
+  border-radius: 5px;
+  transition: background-color 300ms;
+}
+
+.btn-signup {
+  background-color: rgba(137, 3, 14, 0.927);
+ 
+}
+
+.btn-signup:hover {
+  background-color: rgb(149, 6, 21);
+}
+
+.btn-signup {
+  background-color: rgba(69, 105, 144, 0.7);
+}
+
+.btn-signup:hover {
+  background-color: rgba(69, 105, 144, 1);
+ 
+}
+
+/* Forgot password */
+.forgot_password {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.forgot_password a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 800;
+
+}
+
+.forgot_password a:hover {
+  text-decoration: underline;
+}
+
+/* "or" text */
+.or {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin: 15px 0;
+  font-weight: 900;
+}
+
+/* Wave rotation animation */
+@keyframes waves {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.loader-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(15, 14, 14, 0.656);
+  z-index: 9999;
+}

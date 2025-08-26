@@ -1,0 +1,162 @@
+.admin-container {
+  
+  font-family: Arial, sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* adjust karta hai center */
+  border: 1px solid #282928;
+  padding: 50px;
+  background-color: #1516159d;
+  color: rgb(255, 255, 255);
+  border-radius: 13px;
+  box-shadow: 1px 1px 30px rgba(218, 10, 10, 0.192);
+  max-width: 1900px;
+  margin-top: 3px;
+}
+
+.admin-container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #33303000;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+  border-radius: 8px;
+  overflow: hidden;
+  /* border: 1px solid #f23c3c; */
+}
+
+th,td {
+  padding: 15px;
+  text-align: left;
+  border: 4px solid #f23c3c;
+  overflow: hidden;
+}
+
+th {
+  background: #28a745;
+  color: white;
+}
+
+select {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.font-awesome-icon{
+   color: rgb(213, 16, 16);
+   padding: 10px;
+   font-size: 17px;
+}
+
+.font-awesome-icon:hover{
+   background-color: rgb(223, 158, 158);
+   padding: 10px;
+   border-radius: 7px;
+   font-size: 17px;
+}
+
+
+
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  font-size: 16px;
+}
+
+.pagination button {
+  padding: 6px 12px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.pagination button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.addressColumn{
+  background-color: #28a745;
+}
+
+/* Limit Address column width and truncate text */
+.address-col {
+  max-width: 150px; /* adjust width as needed */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Tooltip on hover */
+.address-col:hover::after {
+  content: attr(data-full); /* full address from data attribute */
+  position: absolute;
+  top: 100%;               /* show below the cell */
+  left: 0;
+  max-width: 600px;        /* limit tooltip width */
+  white-space: normal;
+  background: #000000b5;
+  color: #ffffffca;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  padding: 5px;
+  z-index: 10;
+}
+
+.loader-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(14, 15, 14, 0.967);
+  z-index: 9999;
+}
+
+
+.filter-container{
+  background-color: rgba(54, 52, 52, 0.645);
+  padding: 20px;
+  box-shadow: 1px 1px 10px rgba(255, 0, 0, 0.24);
+  border-radius: 10px;
+}
+
+.filter-select{
+  background-color: rgb(37, 36, 36);
+  margin-left: 10px;
+  color: white;
+}
+
+.search-filter-input{
+ width: 40%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    padding: 10px;
+    float: right;
+}
+
+
+
+
+.search-filter-input:focus{
+    background-color: rgba(81, 83, 81, 0.663);
+    color: white;
+}

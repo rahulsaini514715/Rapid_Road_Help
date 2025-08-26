@@ -1,0 +1,162 @@
+
+.container{
+    color: #ffffff;
+    overflow-y: auto; 
+    width: 80%; 
+    height: 80%;
+    padding: 40px;
+}
+.service {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.services-container {
+  /* max-height: 300px; */
+  /* overflow-y: auto; */
+  margin-bottom: 30px;
+  padding-right: 10px;
+}
+
+.services-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.service-card {
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  padding: 20px;
+  background: #fff;
+  flex: 1 1 calc(33% - 15px);
+  cursor: pointer;
+  text-align: center;
+  border: 2px solid transparent;
+  min-width: 150px;
+  box-sizing: border-box;
+  color: #414040;
+}
+
+.service-card.selected {
+  border: 2px solid #0d6efd;
+  background-color: #e9f2ff;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.service-icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.service-card h5 {
+  font-weight: bold;
+  margin-top: 5px;
+  font-size: 1rem;
+}
+
+.service-card p {
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.map-container {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.payment-info {
+  background: #fff;
+  color: #414040;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+}
+
+.payment-info p, .payment-info select, .payment-info button {
+  margin: 5px 0;
+}
+
+/* Popup Notification */
+.popup {
+  position: fixed;
+  margin-top: 50px;
+  margin-right: 40%;
+  top: 20px;
+  right: 20px;
+  background: #28a745; /* green for success */
+  color: white;
+  padding: 15px 25px;
+  border-radius: 8px;
+  font-weight: 500;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  animation: slideIn 0.5s ease, fadeOut 0.5s ease 2.5s forwards;
+  z-index: 99999999999999999999999999999;
+}
+
+@keyframes slideIn {
+  0% { transform: translateX(100%); opacity: 0; }
+  100% { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+/* Highlight selected service */
+.service-card.selected {
+  border: 2px solid #007bff;
+  background-color: #e6f0ff;
+}
+
+
+@media (max-width: 992px) {
+  .service-card {
+    flex: 1 1 calc(50% - 15px);
+  }
+}
+
+@media (max-width: 576px) {
+  .service-card {
+    flex: 1 1 100%;
+  }
+  .map-container {
+    height: 200px;
+  }
+  .services-container {
+    max-height: 250px;
+  }
+}
+
+
+/* Styles for TV screens */
+@media (min-width: 1600px) and (max-width: 3840px) {
+    .container {
+        margin-top: 2%;  /* Less top margin for big screens like TV */
+        /* font-size: 1.5rem; Optional: increase text size */
+    }
+}

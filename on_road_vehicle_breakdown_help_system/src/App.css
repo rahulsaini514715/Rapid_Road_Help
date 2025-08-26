@@ -1,0 +1,259 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.bgr {
+  height: 100vh;               /* full screen height */
+  width: 100vw;                /* full screen width */
+  background-image: url("./assets/Garage_car.png");
+  background-repeat: no-repeat;
+  background-size: cover;      /* make it cover full screen */
+  background-position: center; /* keep it centered */
+}
+
+
+/*   NavBar Started */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* space between left & right */
+  padding: 20px 40px;
+  background: rgba(0, 0, 0, 0.5); /* semi-transparent */
+  color: white;
+  box-shadow: 0px 0px 8px rgb(78, 74, 74);
+  /* margin-left: 25px; */
+  z-index: 9999999;
+  
+}
+
+
+
+.navbar-brand {
+  height: 50px;
+  margin-right: 40px;
+  padding-left: 30px;
+}
+.user_info {
+  display: flex;             /* make container flex */
+  align-items: center;       /* vertically center items */
+  background-color: #b12d4c4e;
+  padding: 4px 10px;         /* top/bottom 4px, left/right 10px */
+  border-radius: 10px;
+  gap: 10px;                 /* spacing between items */
+}
+
+.user_dp {
+  width: 40px;               /* make width same as height for perfect circle */
+  height: 40px;
+  border-radius: 50%;        /* circular avatar */
+  object-fit: cover;         /* ensure image scales properly */
+}
+
+.Username {
+  font-weight: 500;
+  color: #fff;               /* or whatever color you want */
+}
+
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  transition: background 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: rgba(179, 101, 207, 0.496);
+}
+
+
+.left-links {
+  flex: 1;
+}
+
+
+.right-links {
+  margin-right: 20px;
+}
+
+
+
+
+
+
+.animated-logout-btn {
+  background: linear-gradient(45deg, #ff4b2b, #ff416c);
+  color: white;
+  font-weight: bold;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(255, 65, 108, 0.4);
+  
+}
+
+.animated-logout-btn::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: rgba(255, 255, 255, 0.2);
+  transform: rotate(45deg);
+  transition: all 0.5s ease;
+}
+
+.animated-logout-btn:hover::before {
+  top: -70%;
+  left: -70%;
+}
+
+.animated-logout-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(255, 65, 108, 0.6);
+}
+
+
+
+/*   NavBar End */
+
+
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 15px 20px;
+    align-items: flex-start;
+    z-index: 999999999;
+    background-color: #0e0e0ef1;
+  }
+
+  .navbar-brand {
+    margin-bottom: 10px;
+    padding-right: 95%;
+    /* border-bottom: 1px solid rgba(110, 99, 99, 0.893); */
+
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+
+  }
+
+  .nav-links a {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #0c020538;
+  }
+
+  .left-links,
+  .right-links {
+    margin-left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+/* Mobile Responsive */
+@media screen and (max-width: 1300px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    display: none; /* hidden by default */
+  }
+
+  .nav-links li a,
+  .nav-links li button {
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar.responsive .nav-links {
+    display: flex; 
+    
+  }
+
+  .icon {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 0px;
+    font-size: 30px;
+    color: rgb(157, 102, 128);
+    cursor: pointer;
+  }
+
+  .FabarFontAwesomeIcon{
+    color: rgb(220, 220, 220);
+    font-size: 50px;
+    margin-top: 7px;
+  }
+}
+
+/* Mobile responsiveness */
+
+
+
+
+@media screen and (min-width: 1300px) {
+  .FabarFontAwesomeIcon{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .navbar-brand {
+    padding-right: 90%; /* remove huge padding */
+    margin-bottom: 10px;
+    height: 62px;
+  }
+
+  /* Make each nav item full width */
+  ul li {
+    width: 95%; /* full width of navbar */
+    background-color: #2d282930;
+    margin-bottom: 5px; /* spacing between items */
+    padding: 10px 0; /* vertical padding */
+    text-align: center; /* center text inside */
+    border-radius: 5px; /* optional rounded corners */
+  }
+
+  /* Adjust links inside li */
+  ul li a,
+  ul li button {
+    width: 100%;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
